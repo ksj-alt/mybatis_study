@@ -116,3 +116,248 @@
 [TRACE] [2020-03-31 11:30:04] HikariProxyConnection@976592457 wrapping com.mysql.jdbc.JDBC4Connection@18e3ec7
 [DEBUG] [2020-03-31 11:30:04] testOpenSession()
 [DEBUG] [2020-03-31 11:30:04] session org.apache.ibatis.session.defaults.DefaultSqlSession@626a32df
+[TRACE] [2020-04-01 10:08:52] HikariDataSource (HikariPool-1)
+[TRACE] [2020-04-01 10:08:52] HikariProxyConnection@1624797474 wrapping com.mysql.jdbc.JDBC4Connection@29f0ff16
+[DEBUG] [2020-04-01 10:08:52] testOpenSession()
+[DEBUG] [2020-04-01 10:09:23] testOpenSession()
+[TRACE] [2020-04-01 10:09:24] HikariDataSource (HikariPool-2)
+[TRACE] [2020-04-01 10:09:24] HikariProxyConnection@223325695 wrapping com.mysql.jdbc.JDBC4Connection@46221899
+[DEBUG] [2020-04-01 10:12:37] testOpenSession()
+[TRACE] [2020-04-01 10:12:38] HikariDataSource (HikariPool-2)
+[TRACE] [2020-04-01 10:12:38] HikariProxyConnection@1099177665 wrapping com.mysql.jdbc.JDBC4Connection@d4fadff
+[DEBUG] [2020-04-01 10:17:12] testOpenSession()
+[TRACE] [2020-04-01 10:17:12] HikariDataSource (HikariPool-2)
+[TRACE] [2020-04-01 10:17:12] HikariProxyConnection@1099177665 wrapping com.mysql.jdbc.JDBC4Connection@d4fadff
+[DEBUG] [2020-04-01 10:17:59] testOpenSession()
+[TRACE] [2020-04-01 10:17:59] HikariDataSource (HikariPool-2)
+[TRACE] [2020-04-01 10:17:59] HikariProxyConnection@1099177665 wrapping com.mysql.jdbc.JDBC4Connection@d4fadff
+[DEBUG] [2020-04-01 10:19:05] testOpenSession()
+[DEBUG] [2020-04-01 10:19:05] session org.apache.ibatis.session.defaults.DefaultSqlSession@2ee0cbc6
+[DEBUG] [2020-04-01 10:19:05] test01SelectStudentByNo()
+[DEBUG] [2020-04-01 10:19:05] ==>  Preparing: select stud_id, name, email, dob, phone from students WHERE stud_id=? 
+[DEBUG] [2020-04-01 10:19:05] ==> Parameters: 1(Integer)
+[TRACE] [2020-04-01 10:19:05] <==    Columns: stud_id, name, email, dob, phone
+[TRACE] [2020-04-01 10:19:05] <==        Row: 1, Timothy, timothy@gmail.com, 1988-04-25, 123-123-1234
+[DEBUG] [2020-04-01 10:19:05] <==      Total: 1
+[DEBUG] [2020-04-01 10:19:05] Student [studId=1, name=Timothy, email=timothy@gmail.com, phone=PhoneNumber [contryCode=123, stateCode=123, number=1234], dob=Mon Apr 25 00:00:00 EDT 1988]
+[DEBUG] [2020-04-01 10:19:05] test02selectStudentByNoWithResultMap()
+[DEBUG] [2020-04-01 10:19:05] test03selectStudentByAll()
+[DEBUG] [2020-04-01 10:19:05] ==>  Preparing: select stud_id, name, email, dob, phone from students 
+[DEBUG] [2020-04-01 10:19:05] ==> Parameters: 
+[TRACE] [2020-04-01 10:19:05] <==    Columns: stud_id, name, email, dob, phone
+[TRACE] [2020-04-01 10:19:05] <==        Row: 1, Timothy, timothy@gmail.com, 1988-04-25, 123-123-1234
+[TRACE] [2020-04-01 10:19:05] <==        Row: 2, Douglas, douglas@gmail.com, 1990-08-15, 789-456-1234
+[DEBUG] [2020-04-01 10:19:05] <==      Total: 2
+[DEBUG] [2020-04-01 10:19:05] Student [studId=1, name=Timothy, email=timothy@gmail.com, phone=PhoneNumber [contryCode=123, stateCode=123, number=1234], dob=Mon Apr 25 00:00:00 EDT 1988]
+[DEBUG] [2020-04-01 10:19:05] Student [studId=2, name=Douglas, email=douglas@gmail.com, phone=PhoneNumber [contryCode=789, stateCode=456, number=1234], dob=Wed Aug 15 00:00:00 EDT 1990]
+[DEBUG] [2020-04-01 10:19:05] ==>  Preparing: insert into students(stud_id, name, email, phone, dob) values(?, ?, ?, ?, ?) 
+[DEBUG] [2020-04-01 10:19:05] ==> Parameters: 3(Integer), ȫ�浿3(String), lee@test.co.kr(String), PhoneNumber [contryCode=010, stateCode=1234, number=1234](String), 1990-03-28 10:19:05.661(Timestamp)
+[TRACE] [2020-04-01 10:19:05] HikariDataSource (HikariPool-2)
+[TRACE] [2020-04-01 10:19:05] HikariProxyConnection@689095183 wrapping com.mysql.jdbc.JDBC4Connection@1d6f0bfd
+[DEBUG] [2020-04-01 10:19:55] test01SelectStudentByNo()
+[DEBUG] [2020-04-01 10:19:55] test02selectStudentByNoWithResultMap()
+[DEBUG] [2020-04-01 10:19:55] test03selectStudentByAll()
+[TRACE] [2020-04-01 10:19:55] HikariDataSource (HikariPool-2)
+[TRACE] [2020-04-01 10:19:55] HikariProxyConnection@428461014 wrapping com.mysql.jdbc.JDBC4Connection@5e1c0f7c
+[DEBUG] [2020-04-01 10:19:55] testOpenSession()
+[DEBUG] [2020-04-01 10:19:55] session org.apache.ibatis.session.defaults.DefaultSqlSession@41ba424a
+[DEBUG] [2020-04-01 10:20:45] test01SelectStudentByNo()
+[DEBUG] [2020-04-01 10:20:45] ==>  Preparing: select stud_id, name, email, dob, phone from students WHERE stud_id=? 
+[DEBUG] [2020-04-01 10:20:45] ==> Parameters: 1(Integer)
+[TRACE] [2020-04-01 10:20:45] <==    Columns: stud_id, name, email, dob, phone
+[TRACE] [2020-04-01 10:20:45] <==        Row: 1, Timothy, timothy@gmail.com, 1988-04-25, 123-123-1234
+[DEBUG] [2020-04-01 10:20:45] <==      Total: 1
+[DEBUG] [2020-04-01 10:20:45] Student [studId=1, name=Timothy, email=timothy@gmail.com, phone=PhoneNumber [contryCode=123, stateCode=123, number=1234], dob=Mon Apr 25 00:00:00 EDT 1988]
+[DEBUG] [2020-04-01 10:20:45] test02selectStudentByNoWithResultMap()
+[DEBUG] [2020-04-01 10:20:45] ==>  Preparing: select stud_id, name, email, dob, phone, substring(phone, 1, 3) as f, substring(phone, 5, 3) as m, substring(phone, 9, 4) as l from students where stud_id=? 
+[DEBUG] [2020-04-01 10:20:45] ==> Parameters: 1(Integer)
+[TRACE] [2020-04-01 10:20:45] <==    Columns: stud_id, name, email, dob, phone, f, m, l
+[TRACE] [2020-04-01 10:20:45] <==        Row: 1, Timothy, timothy@gmail.com, 1988-04-25, 123-123-1234, 123, 123, 1234
+[DEBUG] [2020-04-01 10:20:45] <==      Total: 1
+[DEBUG] [2020-04-01 10:20:45] Student [studId=1, name=Timothy, email=timothy@gmail.com, phone=PhoneNumber [contryCode=123, stateCode=123, number=1234], dob=Mon Apr 25 00:00:00 EDT 1988]
+[DEBUG] [2020-04-01 10:20:45] test03selectStudentByAll()
+[DEBUG] [2020-04-01 10:20:45] ==>  Preparing: select stud_id, name, email, dob, phone from students 
+[DEBUG] [2020-04-01 10:20:45] ==> Parameters: 
+[TRACE] [2020-04-01 10:20:45] <==    Columns: stud_id, name, email, dob, phone
+[TRACE] [2020-04-01 10:20:45] <==        Row: 1, Timothy, timothy@gmail.com, 1988-04-25, 123-123-1234
+[TRACE] [2020-04-01 10:20:45] <==        Row: 2, Douglas, douglas@gmail.com, 1990-08-15, 789-456-1234
+[DEBUG] [2020-04-01 10:20:45] <==      Total: 2
+[DEBUG] [2020-04-01 10:20:45] Student [studId=1, name=Timothy, email=timothy@gmail.com, phone=PhoneNumber [contryCode=123, stateCode=123, number=1234], dob=Mon Apr 25 00:00:00 EDT 1988]
+[DEBUG] [2020-04-01 10:20:45] Student [studId=2, name=Douglas, email=douglas@gmail.com, phone=PhoneNumber [contryCode=789, stateCode=456, number=1234], dob=Wed Aug 15 00:00:00 EDT 1990]
+[DEBUG] [2020-04-01 10:20:45] ==>  Preparing: insert into students(stud_id, name, email, phone, dob) values(?, ?, ?, ?, ?) 
+[DEBUG] [2020-04-01 10:20:45] ==> Parameters: 3(Integer), ȫ�浿3(String), lee@test.co.kr(String), PhoneNumber [contryCode=010, stateCode=1234, number=1234](String), 1990-03-28 10:20:45.298(Timestamp)
+[TRACE] [2020-04-01 10:20:45] HikariDataSource (HikariPool-2)
+[TRACE] [2020-04-01 10:20:45] HikariProxyConnection@377345785 wrapping com.mysql.jdbc.JDBC4Connection@75a3fbd4
+[DEBUG] [2020-04-01 10:20:45] testOpenSession()
+[DEBUG] [2020-04-01 10:20:45] session org.apache.ibatis.session.defaults.DefaultSqlSession@6f396c89
+[DEBUG] [2020-04-01 10:21:47] test01SelectStudentByNo()
+[DEBUG] [2020-04-01 10:21:47] ==>  Preparing: select stud_id, name, email, dob, phone from students WHERE stud_id=? 
+[DEBUG] [2020-04-01 10:21:47] ==> Parameters: 1(Integer)
+[TRACE] [2020-04-01 10:21:47] <==    Columns: stud_id, name, email, dob, phone
+[TRACE] [2020-04-01 10:21:47] <==        Row: 1, Timothy, timothy@gmail.com, 1988-04-25, 123-123-1234
+[DEBUG] [2020-04-01 10:21:47] <==      Total: 1
+[DEBUG] [2020-04-01 10:21:47] Student [studId=1, name=Timothy, email=timothy@gmail.com, phone=123-123-1234, dob=Mon Apr 25 00:00:00 EDT 1988]
+[DEBUG] [2020-04-01 10:21:47] test02selectStudentByNoWithResultMap()
+[DEBUG] [2020-04-01 10:21:47] ==>  Preparing: select stud_id, name, email, dob, phone, substring(phone, 1, 3) as f, substring(phone, 5, 3) as m, substring(phone, 9, 4) as l from students where stud_id=? 
+[DEBUG] [2020-04-01 10:21:47] ==> Parameters: 1(Integer)
+[TRACE] [2020-04-01 10:21:47] <==    Columns: stud_id, name, email, dob, phone, f, m, l
+[TRACE] [2020-04-01 10:21:47] <==        Row: 1, Timothy, timothy@gmail.com, 1988-04-25, 123-123-1234, 123, 123, 1234
+[DEBUG] [2020-04-01 10:21:47] <==      Total: 1
+[DEBUG] [2020-04-01 10:21:47] Student [studId=1, name=Timothy, email=timothy@gmail.com, phone=123-123-1234, dob=Mon Apr 25 00:00:00 EDT 1988]
+[DEBUG] [2020-04-01 10:21:47] test03selectStudentByAll()
+[DEBUG] [2020-04-01 10:21:47] ==>  Preparing: select stud_id, name, email, dob, phone from students 
+[DEBUG] [2020-04-01 10:21:47] ==> Parameters: 
+[TRACE] [2020-04-01 10:21:47] <==    Columns: stud_id, name, email, dob, phone
+[TRACE] [2020-04-01 10:21:47] <==        Row: 1, Timothy, timothy@gmail.com, 1988-04-25, 123-123-1234
+[TRACE] [2020-04-01 10:21:47] <==        Row: 2, Douglas, douglas@gmail.com, 1990-08-15, 789-456-1234
+[DEBUG] [2020-04-01 10:21:47] <==      Total: 2
+[DEBUG] [2020-04-01 10:21:47] Student [studId=1, name=Timothy, email=timothy@gmail.com, phone=123-123-1234, dob=Mon Apr 25 00:00:00 EDT 1988]
+[DEBUG] [2020-04-01 10:21:47] Student [studId=2, name=Douglas, email=douglas@gmail.com, phone=789-456-1234, dob=Wed Aug 15 00:00:00 EDT 1990]
+[DEBUG] [2020-04-01 10:21:47] ==>  Preparing: insert into students(stud_id, name, email, phone, dob) values(?, ?, ?, ?, ?) 
+[DEBUG] [2020-04-01 10:21:47] ==> Parameters: 3(Integer), ȫ�浿3(String), lee@test.co.kr(String), 010-1234-1234(String), 1990-03-28 10:21:47.534(Timestamp)
+[DEBUG] [2020-04-01 10:21:47] <==    Updates: 1
+[TRACE] [2020-04-01 10:21:47] HikariDataSource (HikariPool-2)
+[TRACE] [2020-04-01 10:21:47] HikariProxyConnection@1465231379 wrapping com.mysql.jdbc.JDBC4Connection@38e88394
+[DEBUG] [2020-04-01 10:21:47] testOpenSession()
+[DEBUG] [2020-04-01 10:21:47] session org.apache.ibatis.session.defaults.DefaultSqlSession@1d37be9b
+[TRACE] [2020-04-01 10:40:33] HikariDataSource (HikariPool-1)
+[TRACE] [2020-04-01 10:40:33] HikariProxyConnection@1624797474 wrapping com.mysql.jdbc.JDBC4Connection@29f0ff16
+[DEBUG] [2020-04-01 10:40:33] testOpenSession()
+[DEBUG] [2020-04-01 10:40:33] session org.apache.ibatis.session.defaults.DefaultSqlSession@5d3a739e
+[DEBUG] [2020-04-01 10:40:33] test01SelectStudentByNo()
+[DEBUG] [2020-04-01 10:40:33] ==>  Preparing: select stud_id, name, email, dob, phone from students WHERE stud_id=? 
+[DEBUG] [2020-04-01 10:40:33] ==> Parameters: 1(Integer)
+[TRACE] [2020-04-01 10:40:33] <==    Columns: stud_id, name, email, dob, phone
+[TRACE] [2020-04-01 10:40:33] <==        Row: 1, Timothy, timothy@gmail.com, 1988-04-25, 123-123-1234
+[DEBUG] [2020-04-01 10:40:33] <==      Total: 1
+[DEBUG] [2020-04-01 10:40:33] Student [studId=1, name=Timothy, email=timothy@gmail.com, phone=123-123-1234, dob=Mon Apr 25 00:00:00 EDT 1988]
+[DEBUG] [2020-04-01 10:40:33] test02selectStudentByNoWithResultMap()
+[DEBUG] [2020-04-01 10:40:33] ==>  Preparing: select stud_id, name, email, dob, phone, substring(phone, 1, 3) as f, substring(phone, 5, 3) as m, substring(phone, 9, 4) as l from students where stud_id=? 
+[DEBUG] [2020-04-01 10:40:33] ==> Parameters: 1(Integer)
+[TRACE] [2020-04-01 10:40:33] <==    Columns: stud_id, name, email, dob, phone, f, m, l
+[TRACE] [2020-04-01 10:40:33] <==        Row: 1, Timothy, timothy@gmail.com, 1988-04-25, 123-123-1234, 123, 123, 1234
+[DEBUG] [2020-04-01 10:40:33] <==      Total: 1
+[DEBUG] [2020-04-01 10:40:33] Student [studId=1, name=Timothy, email=timothy@gmail.com, phone=123-123-1234, dob=Mon Apr 25 00:00:00 EDT 1988]
+[DEBUG] [2020-04-01 10:40:33] test03selectStudentByAll()
+[DEBUG] [2020-04-01 10:40:33] ==>  Preparing: select stud_id, name, email, dob, phone from students 
+[DEBUG] [2020-04-01 10:40:33] ==> Parameters: 
+[TRACE] [2020-04-01 10:40:33] <==    Columns: stud_id, name, email, dob, phone
+[TRACE] [2020-04-01 10:40:33] <==        Row: 1, Timothy, timothy@gmail.com, 1988-04-25, 123-123-1234
+[TRACE] [2020-04-01 10:40:33] <==        Row: 2, Douglas, douglas@gmail.com, 1990-08-15, 789-456-1234
+[TRACE] [2020-04-01 10:40:33] <==        Row: 3, ȫ�浿3, lee@test.co.kr, 1990-03-28, 010-1234-1234
+[DEBUG] [2020-04-01 10:40:33] <==      Total: 3
+[DEBUG] [2020-04-01 10:40:33] Student [studId=1, name=Timothy, email=timothy@gmail.com, phone=123-123-1234, dob=Mon Apr 25 00:00:00 EDT 1988]
+[DEBUG] [2020-04-01 10:40:33] Student [studId=2, name=Douglas, email=douglas@gmail.com, phone=789-456-1234, dob=Wed Aug 15 00:00:00 EDT 1990]
+[DEBUG] [2020-04-01 10:40:33] Student [studId=3, name=ȫ�浿3, email=lee@test.co.kr, phone=010-1234-1234, dob=Wed Mar 28 00:00:00 EST 1990]
+[DEBUG] [2020-04-01 10:40:33] ==>  Preparing: insert into students(stud_id, name, email, phone, dob) values(?, ?, ?, ?, ?) 
+[DEBUG] [2020-04-01 10:40:33] ==> Parameters: 3(Integer), ȫ�浿3(String), lee@test.co.kr(String), 010-1234-1234(String), 1990-03-28 10:40:33.882(Timestamp)
+[DEBUG] [2020-04-01 10:40:33] test05DeleteStudent()
+[DEBUG] [2020-04-01 10:40:33] ==>  Preparing: delete from students where stud_id = ? 
+[DEBUG] [2020-04-01 10:40:33] ==> Parameters: 3(Integer)
+[DEBUG] [2020-04-01 10:40:33] <==    Updates: 1
+[DEBUG] [2020-04-01 10:40:50] test01SelectStudentByNo()
+[DEBUG] [2020-04-01 10:40:50] ==>  Preparing: select stud_id, name, email, dob, phone from students WHERE stud_id=? 
+[DEBUG] [2020-04-01 10:40:50] ==> Parameters: 1(Integer)
+[TRACE] [2020-04-01 10:40:50] <==    Columns: stud_id, name, email, dob, phone
+[TRACE] [2020-04-01 10:40:50] <==        Row: 1, Timothy, timothy@gmail.com, 1988-04-25, 123-123-1234
+[DEBUG] [2020-04-01 10:40:50] <==      Total: 1
+[DEBUG] [2020-04-01 10:40:50] Student [studId=1, name=Timothy, email=timothy@gmail.com, phone=123-123-1234, dob=Mon Apr 25 00:00:00 EDT 1988]
+[DEBUG] [2020-04-01 10:40:50] test02selectStudentByNoWithResultMap()
+[DEBUG] [2020-04-01 10:40:50] ==>  Preparing: select stud_id, name, email, dob, phone, substring(phone, 1, 3) as f, substring(phone, 5, 3) as m, substring(phone, 9, 4) as l from students where stud_id=? 
+[DEBUG] [2020-04-01 10:40:50] ==> Parameters: 1(Integer)
+[TRACE] [2020-04-01 10:40:50] <==    Columns: stud_id, name, email, dob, phone, f, m, l
+[TRACE] [2020-04-01 10:40:50] <==        Row: 1, Timothy, timothy@gmail.com, 1988-04-25, 123-123-1234, 123, 123, 1234
+[DEBUG] [2020-04-01 10:40:50] <==      Total: 1
+[DEBUG] [2020-04-01 10:40:50] Student [studId=1, name=Timothy, email=timothy@gmail.com, phone=123-123-1234, dob=Mon Apr 25 00:00:00 EDT 1988]
+[DEBUG] [2020-04-01 10:40:50] test03selectStudentByAll()
+[DEBUG] [2020-04-01 10:40:50] ==>  Preparing: select stud_id, name, email, dob, phone from students 
+[DEBUG] [2020-04-01 10:40:50] ==> Parameters: 
+[TRACE] [2020-04-01 10:40:50] <==    Columns: stud_id, name, email, dob, phone
+[TRACE] [2020-04-01 10:40:50] <==        Row: 1, Timothy, timothy@gmail.com, 1988-04-25, 123-123-1234
+[TRACE] [2020-04-01 10:40:50] <==        Row: 2, Douglas, douglas@gmail.com, 1990-08-15, 789-456-1234
+[DEBUG] [2020-04-01 10:40:50] <==      Total: 2
+[DEBUG] [2020-04-01 10:40:50] Student [studId=1, name=Timothy, email=timothy@gmail.com, phone=123-123-1234, dob=Mon Apr 25 00:00:00 EDT 1988]
+[DEBUG] [2020-04-01 10:40:50] Student [studId=2, name=Douglas, email=douglas@gmail.com, phone=789-456-1234, dob=Wed Aug 15 00:00:00 EDT 1990]
+[DEBUG] [2020-04-01 10:40:50] test05DeleteStudent()
+[DEBUG] [2020-04-01 10:40:50] ==>  Preparing: delete from students where stud_id = ? 
+[DEBUG] [2020-04-01 10:40:50] ==> Parameters: 3(Integer)
+[DEBUG] [2020-04-01 10:40:50] <==    Updates: 0
+[TRACE] [2020-04-01 10:40:50] HikariDataSource (HikariPool-2)
+[TRACE] [2020-04-01 10:40:50] HikariProxyConnection@118625890 wrapping com.mysql.jdbc.JDBC4Connection@2771a37d
+[DEBUG] [2020-04-01 10:40:50] testOpenSession()
+[DEBUG] [2020-04-01 10:40:50] session org.apache.ibatis.session.defaults.DefaultSqlSession@a2fea2a
+[DEBUG] [2020-04-01 10:42:03] test01SelectStudentByNo()
+[DEBUG] [2020-04-01 10:42:03] ==>  Preparing: select stud_id, name, email, dob, phone from students WHERE stud_id=? 
+[DEBUG] [2020-04-01 10:42:03] ==> Parameters: 1(Integer)
+[TRACE] [2020-04-01 10:42:03] <==    Columns: stud_id, name, email, dob, phone
+[TRACE] [2020-04-01 10:42:03] <==        Row: 1, Timothy, timothy@gmail.com, 1988-04-25, 123-123-1234
+[DEBUG] [2020-04-01 10:42:03] <==      Total: 1
+[DEBUG] [2020-04-01 10:42:03] Student [studId=1, name=Timothy, email=timothy@gmail.com, phone=123-123-1234, dob=Mon Apr 25 00:00:00 EDT 1988]
+[DEBUG] [2020-04-01 10:42:03] test02selectStudentByNoWithResultMap()
+[DEBUG] [2020-04-01 10:42:03] ==>  Preparing: select stud_id, name, email, dob, phone, substring(phone, 1, 3) as f, substring(phone, 5, 3) as m, substring(phone, 9, 4) as l from students where stud_id=? 
+[DEBUG] [2020-04-01 10:42:03] ==> Parameters: 1(Integer)
+[TRACE] [2020-04-01 10:42:03] <==    Columns: stud_id, name, email, dob, phone, f, m, l
+[TRACE] [2020-04-01 10:42:03] <==        Row: 1, Timothy, timothy@gmail.com, 1988-04-25, 123-123-1234, 123, 123, 1234
+[DEBUG] [2020-04-01 10:42:03] <==      Total: 1
+[DEBUG] [2020-04-01 10:42:03] Student [studId=1, name=Timothy, email=timothy@gmail.com, phone=123-123-1234, dob=Mon Apr 25 00:00:00 EDT 1988]
+[DEBUG] [2020-04-01 10:42:03] test03selectStudentByAll()
+[DEBUG] [2020-04-01 10:42:03] ==>  Preparing: select stud_id, name, email, dob, phone from students 
+[DEBUG] [2020-04-01 10:42:03] ==> Parameters: 
+[TRACE] [2020-04-01 10:42:03] <==    Columns: stud_id, name, email, dob, phone
+[TRACE] [2020-04-01 10:42:03] <==        Row: 1, Timothy, timothy@gmail.com, 1988-04-25, 123-123-1234
+[TRACE] [2020-04-01 10:42:03] <==        Row: 2, Douglas, douglas@gmail.com, 1990-08-15, 789-456-1234
+[DEBUG] [2020-04-01 10:42:03] <==      Total: 2
+[DEBUG] [2020-04-01 10:42:03] Student [studId=1, name=Timothy, email=timothy@gmail.com, phone=123-123-1234, dob=Mon Apr 25 00:00:00 EDT 1988]
+[DEBUG] [2020-04-01 10:42:03] Student [studId=2, name=Douglas, email=douglas@gmail.com, phone=789-456-1234, dob=Wed Aug 15 00:00:00 EDT 1990]
+[DEBUG] [2020-04-01 10:42:03] ==>  Preparing: insert into students(stud_id, name, email, phone, dob) values(?, ?, ?, ?, ?) 
+[DEBUG] [2020-04-01 10:42:03] ==> Parameters: 3(Integer), ȫ�浿3(String), lee@test.co.kr(String), 010-1234-1234(String), 1990-03-28 10:42:03.13(Timestamp)
+[DEBUG] [2020-04-01 10:42:03] <==    Updates: 1
+[DEBUG] [2020-04-01 10:42:03] test05DeleteStudent()
+[DEBUG] [2020-04-01 10:42:03] ==>  Preparing: delete from students where stud_id = ? 
+[DEBUG] [2020-04-01 10:42:03] ==> Parameters: 3(Integer)
+[DEBUG] [2020-04-01 10:42:03] <==    Updates: 1
+[TRACE] [2020-04-01 10:42:03] HikariDataSource (HikariPool-2)
+[TRACE] [2020-04-01 10:42:03] HikariProxyConnection@2102792656 wrapping com.mysql.jdbc.JDBC4Connection@a3b218d
+[DEBUG] [2020-04-01 10:42:03] testOpenSession()
+[DEBUG] [2020-04-01 10:42:03] session org.apache.ibatis.session.defaults.DefaultSqlSession@41f2e757
+[TRACE] [2020-04-01 10:51:49] HikariDataSource (HikariPool-1)
+[TRACE] [2020-04-01 10:51:49] HikariProxyConnection@1624797474 wrapping com.mysql.jdbc.JDBC4Connection@29f0ff16
+[DEBUG] [2020-04-01 10:51:49] testOpenSession()
+[DEBUG] [2020-04-01 10:51:49] session org.apache.ibatis.session.defaults.DefaultSqlSession@2b8c34e4
+[DEBUG] [2020-04-01 10:51:49] test01SelectStudentByNo()
+[DEBUG] [2020-04-01 10:51:49] ==>  Preparing: select stud_id, name, email, dob, phone from students WHERE stud_id=? 
+[DEBUG] [2020-04-01 10:51:49] ==> Parameters: 1(Integer)
+[TRACE] [2020-04-01 10:51:49] <==    Columns: stud_id, name, email, dob, phone
+[TRACE] [2020-04-01 10:51:49] <==        Row: 1, Timothy, timothy@gmail.com, 1988-04-25, 123-123-1234
+[DEBUG] [2020-04-01 10:51:49] <==      Total: 1
+[DEBUG] [2020-04-01 10:51:49] Student [studId=1, name=Timothy, email=timothy@gmail.com, phone=123-123-1234, dob=Mon Apr 25 00:00:00 EDT 1988]
+[DEBUG] [2020-04-01 10:51:49] test02selectStudentByNoWithResultMap()
+[DEBUG] [2020-04-01 10:51:49] ==>  Preparing: select stud_id, name, email, dob, phone, substring(phone, 1, 3) as f, substring(phone, 5, 3) as m, substring(phone, 9, 4) as l from students where stud_id=? 
+[DEBUG] [2020-04-01 10:51:49] ==> Parameters: 1(Integer)
+[TRACE] [2020-04-01 10:51:49] <==    Columns: stud_id, name, email, dob, phone, f, m, l
+[TRACE] [2020-04-01 10:51:49] <==        Row: 1, Timothy, timothy@gmail.com, 1988-04-25, 123-123-1234, 123, 123, 1234
+[DEBUG] [2020-04-01 10:51:49] <==      Total: 1
+[DEBUG] [2020-04-01 10:51:49] Student [studId=1, name=Timothy, email=timothy@gmail.com, phone=123-123-1234, dob=Mon Apr 25 00:00:00 EDT 1988]
+[DEBUG] [2020-04-01 10:51:49] test03selectStudentByAll()
+[DEBUG] [2020-04-01 10:51:49] ==>  Preparing: select stud_id, name, email, dob, phone from students 
+[DEBUG] [2020-04-01 10:51:49] ==> Parameters: 
+[TRACE] [2020-04-01 10:51:49] <==    Columns: stud_id, name, email, dob, phone
+[TRACE] [2020-04-01 10:51:49] <==        Row: 1, Timothy, timothy@gmail.com, 1988-04-25, 123-123-1234
+[TRACE] [2020-04-01 10:51:49] <==        Row: 2, Douglas, douglas@gmail.com, 1990-08-15, 789-456-1234
+[DEBUG] [2020-04-01 10:51:49] <==      Total: 2
+[DEBUG] [2020-04-01 10:51:49] Student [studId=1, name=Timothy, email=timothy@gmail.com, phone=123-123-1234, dob=Mon Apr 25 00:00:00 EDT 1988]
+[DEBUG] [2020-04-01 10:51:49] Student [studId=2, name=Douglas, email=douglas@gmail.com, phone=789-456-1234, dob=Wed Aug 15 00:00:00 EDT 1990]
+[DEBUG] [2020-04-01 10:51:49] ==>  Preparing: insert into students(stud_id, name, email, phone, dob) values(?, ?, ?, ?, ?) 
+[DEBUG] [2020-04-01 10:51:49] ==> Parameters: 3(Integer), ȫ�浿3(String), lee@test.co.kr(String), 010-1234-1234(String), 1990-03-28 10:51:49.387(Timestamp)
+[DEBUG] [2020-04-01 10:51:49] <==    Updates: 1
+[DEBUG] [2020-04-01 10:51:49] test05DeleteStudent()
+[DEBUG] [2020-04-01 10:51:49] ==>  Preparing: delete from students where stud_id = ? 
+[DEBUG] [2020-04-01 10:51:49] ==> Parameters: 3(Integer)
+[DEBUG] [2020-04-01 10:51:49] <==    Updates: 1
+[DEBUG] [2020-04-01 10:51:49] test06UpdateStudent()
+[DEBUG] [2020-04-01 10:51:49] ==>  Preparing: update students set name=?, email=?, phone=?, dob=? where stud_id=? 
+[DEBUG] [2020-04-01 10:51:49] ==> Parameters: Timothy(String), test@test.co.kr(String), 987-654-3211(String), 2020-04-01 10:51:49.397(Timestamp), 1(Integer)
+[DEBUG] [2020-04-01 10:51:49] <==    Updates: 1
+[DEBUG] [2020-04-01 10:51:49] ==>  Preparing: update students set name=?, email=?, phone=?, dob=? where stud_id=? 
+[DEBUG] [2020-04-01 10:51:49] ==> Parameters: Timothy(String), timothy@gmail.com(String), 123-123-1234(String), 1988-05-25 00:00:00.0(Timestamp), 1(Integer)
+[DEBUG] [2020-04-01 10:51:49] <==    Updates: 1

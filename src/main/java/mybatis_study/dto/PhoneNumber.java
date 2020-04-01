@@ -54,7 +54,7 @@ public class PhoneNumber {
 
 	@Override
 	public String toString() {
-		return String.format("PhoneNumber [contryCode=%s, stateCode=%s, number=%s]", countryCode, stateCode, number);
+		return String.format("%s-%s-%s", countryCode, stateCode, number);
 	}
 
 }
